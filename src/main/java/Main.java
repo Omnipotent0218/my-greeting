@@ -2,10 +2,14 @@ import zero.App;
 import zero.ui.Label;
 
 public class Main extends App {
-    @Override public void settings() { padding(20); }
+    @override public void settings(){
+        title("Greeting");
+        size(420, 240);
+        padding(20);
+    }
 
     @Override public void setup() {
-        Label greeting = new Label("Hello, world!");
+        Label greeting = new Label("Hello, java!");
         show(greeting);
     }
 
